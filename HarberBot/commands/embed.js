@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 exports.run = async(client, message, args) =>{
   if(!message.member.roles.cache.some(role => role.id === '828751511282647090'))
-    return message.reply('sem perm')
+    return message.reply('Você não possuí o cargo necessário para usar este comando.')
   let verif = new Discord.MessageEmbed()
   .setColor("GREEN")
   .setTitle(':white_check_mark: Verificação Discord! <a:confete:828440875612635216>')
